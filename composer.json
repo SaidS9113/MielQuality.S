@@ -1,6 +1,26 @@
 {
+    "name": "",
+    "description": "Description de votre projet",
+    "type": "project",
     "require": {
         "php": "^7.4",
         "monolog/monolog": "^2.0"
+       
+    },
+    "require-dev": {
+       
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            
+        ],
+        "post-update-cmd": [
+           
+        ]
     }
 }
