@@ -1,104 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>MielQuality.S | Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <!---------Barre de promotion----------->
     <div class="promo">
         <p>Livraison gratuite à partir de 50€</p>
     </div>
     <!---------En tete de page----------->
-    <header class="header" id="header">
-        <div class="header-version-m-t-p"> <!--------Div header pour toute les versions----------->
-            <i class="bx bx-menu-alt-left" id="menu-btn" style="font-size: 2.5rem;"></i>
-            <!---------Menu défilant pour mbile et tablette----------->
-            <nav class="mobile-first">
-                <span id="close-btn" style="float:right; cursor:pointer;">&times;</span>
-                <li class="logoNavbar"> <img src="img/logoP.png" alt=""></li>
-                <ul class="listSite">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#">Boutique</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Connexion</a></li>
-                </ul>
-                <ul class="listReseauxScl">
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-snapchat"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href=""><i class="fa fa-envelope"></i></a></li>
-                </ul>
-            </nav>
-            <!---------Barre de recherche pour la version pc----------->
-            <div class="barre-recherche-pc">
-                <div class="search">
-                    <label class="" for=""></label>
-                    <input type="search" id="" class="search-field mb-0" placeholder="Rechercher des produits..."
-                        value="" name="s" autocomplete="off">
-                    <input type="hidden" name="post_type" value="product">
-                    <button type="submit" value="Recherche"
-                        class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
-                        <i class='bx bx-search'></i></button>
-                </div>
-            </div>
-            <!---------Logo toujour au centre----------->
-            <h1><a href="index.html"><img src="img/logoG.png" alt=""></a></h1>
-            <!----icons(de recherche et panier) pour la version mobile et icons(De connexion et panier) pour la version tablette--->
-            <div class="tablette-first_recherche_cart">
-                <i class='bx bx-search'></i></button>
-                <i class='bx bx-user' id="user-btn"></i>
-                <i class='bx bx-shopping-bag' id="cart-icon"><sup id="cart-count">0</sup></i>
-            </div>
-        </div>
-        <!--------Barre de recherche pour la tablette ----------->
-        <div class="barre-recherche-tablette">
-            <div class="search">
-                <label class="" for=""></label>
-                <input type="search" id="" class="search-field mb-0" placeholder="Rechercher des produits..." value=""
-                    name="s" autocomplete="off">
-                <input type="hidden" name="post_type" value="product">
-                <button type="submit" value="Recherche"
-                    class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
-                    <i class='bx bx-search'></i></button>
-            </div>
-        </div>
-        <!--------Menu pour la version pc----------->
-        <nav class="version-desktop">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Boutique</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <!--------Panier----------->
-        <div class="cart">
-            <span id="close-btn-cart" style="float:right; cursor:pointer;">&times;</span>
-            <h2 class="cart-title">PANIER</h2>
-            <p class="panierVide">Votre panier est vide.</p>
-        </div>
-    </header>
+    <?php include './partial/header.php'; ?>
     <!--------Accueil----------->
     <section class="accueil">
         <p>MIELS D'EXCEPTIONS ET 100% NATUREL</p>
@@ -109,19 +35,19 @@
         <h2>NOS PRODUITS</h2>
         <div>
             <figure>
-                <img src="img/jujubier.png" alt="miel de jujubier" />
+                <img src="../img/jujubier.png" alt="miel de jujubier" />
                 <figcaption>Miel de Jujubier <br><span>30€</span></figcaption>
             </figure>
             <figure>
-                <img src="img/jujubier.png" alt="miel de jujubier" />
+                <img src="../img/jujubier.png" alt="miel de jujubier" />
                 <figcaption>Miel blanc <br><span>20€</span></figcaption>
             </figure>
             <figure>
-                <img src="img/jujubier.png" alt="miel de jujubier" />
+                <img src="../img/jujubier.png" alt="miel de jujubier" />
                 <figcaption>Miel rose <br><span>20€</span></figcaption>
             </figure>
             <figure>
-                <img src="img/jujubier.png" alt="miel de jujubier" />
+                <img src="../img/jujubier.png" alt="miel de jujubier" />
                 <figcaption>Miel d'eucalyptus <br><span>15€</span></figcaption>
             </figure>
         </div>
@@ -260,7 +186,7 @@
                         <span>
                             <i class="las la-arrow-right"></i>
                         </span>
-                        <h3>Jack</h3>
+                        <h3>Dina</h3>
                     </div>
                 </div>
             </div>
@@ -270,69 +196,24 @@
         <!--------Partie pour attirer rassurer les clients----------->
         <section class="trust">
             <div>
-                <img src="img/truck.png" alt="">
+                <img src="../img/truck.png" alt="">
                 <h3>Livraison en 48h</h3>
                 <p>Toutes les commandes sont traitées dans les meilleurs délais, avec livraison mondiale.</p>
             </div>
             <div>
-                <img src="img/phone.png" alt="">
+                <img src="../img/phone.png" alt="">
                 <h3>SAV irréprochable</h3>
                 <p>Chacune de vos recommandations sera traitée rapidement sans exception aucune.</p>
             </div>
             <div>
-                <img src="img/card.png" alt="">
+                <img src="../img/card.png" alt="">
                 <h3>Paiement sécurisé</h3>
                 <p>Réglez vos achats en toute sécurité et en toute sérénité par carte bancaire ou via PayPal.</p>
             </div>
         </section>
-        <!--------Partie haut du pied de page----------->
-        <div class="haut-footer">
-            <div>
-                <h3>INFORMATIONS</h3>
-                <p class="reglements">
-                    <a class="lienreglement" href="#">Conditions générales de vente</a>
-                    <a class="lienreglement" href="#"> Politique de confidentialité</a>
-                    <a class="lienreglement" href="#">Contact</a>
-                </p>
-            </div>
-            <div>
-                <h3>RÉSEAUX SOCIAUX</h3>
-                <p class="infos-footer1">
-                    Retrouvez-nous sur les réseaux sociaux pour suivre l’actualité !
-                </p>
-                <a class="lienRS" href="#"><i class='bx bxl-whatsapp'></i></a>
-                <a class="lienRS" href="#"><i class='bx bxl-instagram'></i></a>
-                <a class="lienRS" href="#"><i class='bx bxl-snapchat'></i></a>
-            </div>
-            <div>
-                <h3 class="newsletter">NEWSLETTER</h3>
-                <p class="infos-footer2">
-                    Retrouvez-nous sur les réseaux sociaux pour suivre l’actualité !
-                </p>
-                <div class="mobile-firstNewsletter">
-                    <form action="#">
-                        <input class="barreMail" placeholder="Votre adresse mail" type="email">
-                        <input class="buttonNewsletter" value="SOUSCRIRE" type="submit">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!--------Partie du pied de page----------->
-        <footer>
-            <div class="sous-footer">
-                <div class="image-mPayement">
-                    <img src="img/visa.png" alt="">
-                    <img src="img/paypal.png" alt="">
-                    <img src="img/mastercard.png" alt="">
-                </div>
-                <p class="reglements-sous-footer">
-                    <a class="lienreglement2" href="">Conditions générales de vente</a>
-                    <a class="lienreglement2" href=""> Politique de confidentialité</a>
-                    <a class="lienreglement2" href="">Contact</a>
-                </p>
-                <p class="copyR">Copyright 2024 © MielQuality.S | Réalisé par Monsieur.SAID.S</p>
-            </div>
-        </footer>
-        <script src="script.js"></script>
+        <!--Haut footer et bas footer----------->
+        <?php include './partial/footer.php'; ?>
+        <script src="../js/script.js"></script>
 </body>
+
 </html>
