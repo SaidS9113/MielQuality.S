@@ -24,7 +24,7 @@
         <p>Livraison gratuite à partir de 50€</p>
     </div>
     <!---------En tete de page----------->
-    <?php include './partial/header.php'; ?>
+    <?php include './view/partial/header.php'; ?>
     <!--------Accueil----------->
     <section class="accueil">
         <p>MIELS D'EXCEPTIONS ET 100% NATUREL</p>
@@ -212,7 +212,7 @@
             </div>
         </section>
         <!--Haut footer et bas footer----------->
-        <?php include './partial/footer.php'; ?>
+        <?php include './view/partial/footer.php'; ?>
         <script src="../js/script.js"></script>
 </body>
 
